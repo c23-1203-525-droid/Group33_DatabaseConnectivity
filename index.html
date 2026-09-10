@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CALORUN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sky-bg">
+        <div class="game-container">
+
+            <div class="logo-badge">
+                <h1>CALORUN</h1>
+                <p class="tagline">Learn. Play. Balance.</p>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header">📋 Player Progress</div>
+
+                <div class="panel-body">
+                    <div class="field">
+                        <label>Player Name</label>
+                        <input type="text" id="playerName" placeholder="Enter name">
+                    </div>
+
+                    <div class="field">
+                        <label>Score</label>
+                        <input type="number" id="score" placeholder="0">
+                    </div>
+
+                    <div class="field">
+                        <label>Level</label>
+                        <input type="number" id="level" placeholder="1">
+                    </div>
+
+                    <div class="buttons">
+                        <button class="btn save" onclick="saveGame()">💾 SAVE PROGRESS</button>
+                        <button class="btn load" onclick="loadGame()">📂 LOAD PROGRESS</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel result-panel">
+                <div class="panel-header alt">⭐ Saved Progress</div>
+                <div class="panel-body">
+                    <div class="stat-row">
+                        <span class="stat-icon">🧑</span>
+                        <span class="stat-label">Player</span>
+                        <span class="stat-value" id="displayName">---</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-icon">🏆</span>
+                        <span class="stat-label">Score</span>
+                        <span class="stat-value" id="displayScore">---</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-icon">🚩</span>
+                        <span class="stat-label">Level</span>
+                        <span class="stat-value" id="displayLevel">---</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
