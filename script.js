@@ -1,3 +1,5 @@
+// Handles saving and loading player data using localStorage
+
 function saveGame() {
 
     const playerData = {
